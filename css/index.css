@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Source+Serif+Pro&display=swap');
+
+:root {
+    --color_for_xxx: #965A1C;
+    --paragraph_text_color: #AA7C5A;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    background-color: #F4EEE1;
+}
+
+
+.header_top_adress_numder {
+    display: none;
+}
+
+header .header_logo_and_nav,
+.header_top_adress_numder,
+.header_main,
+.about_us {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+header {
+    background-image: url('../img/header_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 1000px;
+}
+
+header .logo {
+    height: 120px;
+}
+
+.header_logo_and_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav {
+    display: flex;
+}
+
+.header_nav nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header_nav nav a:hover {
+    color: #F8B803;
+}
+
+.another_media img {
+    height: 30px;
+    display: none;
+}
+
+.header_main {
+    display: grid;
+    grid-template-rows: 1fr 40%;
+    height: 450px
+}
+
+.wheat {
+    height: 30px;
+    margin: 10px 0;
+}
+
+.header_main_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_main_text span {
+    color: #D2C9BA;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.header_main_text h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 40px;
+    color: #fff
+}
+
+.header_main_text p {
+    font-family: 'Rubik', sans-serif;
+    color: #A77A58;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.header_main div img {
+    max-width: 100%;
+    max-height: 600px;
+    ;
+}
+
+
+.header_main_buttons a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 20px 50px;
+    border-radius: 30px;
+}
+
+.header_main_buttons a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+.header_main_buttons {
+    margin-top: 40px;
+}
+
+.header_main_buttons div {
+    display: inline-block;
+    margin: 30px 0;
+}
+
+
+@media(min-width: 770px) {
+    .header_main {
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .wheat {
+        height: 30px;
+    }
+
+    .header_main_text span {
+        font-size: 14px;
+    }
+
+    .header_main_text h1 {
+        font-size: 70px;
+    }
+
+    .header_main_text p {
+        font-size: 17px
+    }
+
+    .header_main_buttons a {
+        font-size: 17px;
+    }
+
+}
+
+@media(min-width: 990px) {
+    .header_top_adress_numder {
+        display: flex;
+        justify-content: space-between;
+        color: #D2C9BA;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+    }
+
+    .another_media img {
+        display: inline;
+    }
+
+    .header_main_text h1 {
+        font-size: 85px;
+    }
+}
+
+.header_buttom_second_img {
+    background-image: url(../img/header_background_bottom.svg);
+    height: 50px;
+    background-size: cover;
+}
+
+.wheat_img {
+    height: 30px;
+}
+
+.about_us img {
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+.xxx_over_header {
+    font-family: 'Source Serif Pro', serif;
+    color: var(--color_for_xxx);
+}
+
+.about_us_header {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 34px;
+    color: #000
+}
+
+.about_us_first_paragraph {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.about_us_paragraphs {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: var(--paragraph_text_color);
+    padding: 15px 0;
+    line-height: 1.5;
+}
+
+@media(min-width: 770px) {
+    .about_us_text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 990px) {
+    .about_us_header {
+        font-size: 44px;
+    }
+}
+
+.about_us_buttom_img {
+    background-image: url(../img/about_us_background_bottom.svg);
+    height: 100px;
+    background-size: cover;
+}
+
+.about_tours {
+    background-color: #2C221D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_tours img {
+    height: 30px;
+    margin-left: 30px;
+}
+
+.about_tours h2 {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 34px;
+    margin: 20px 0;
+}
+
+.about_tours span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: var(--paragraph_text_color);
+    line-height: 1.5;
+    padding: 30px;
+    text-align: center;
+}
+
+.choose_tour {
+    display: flex;
+    max-width: 1170px;
+    min-height: 400px;
+}
+
+.tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.tours h3 {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+}
+
+.tours p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+
+.tours a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+
+.tours a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+.personal_tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/personal_tour_bg.png);
+    background-size: cover;
+}
+
+.group_tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/group_tour_bg.png);
+    background-size: cover;
+}
+
+.tasting {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tasting_bg.png);
+    background-size: cover;
+}
+
+.beers {
+    background-color: #2C221D;
+    /* position: relative;
+    display: flex;
+    overflow: hidden; */
+
+
+}
+
+.beers .beer_carousel {
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.beers .beers_card {
+    display: grid;
+    grid-template-rows: 1fr 60%;
+    padding: 20px;
+
+}
+
+.beers_card img {
+    max-width: 100%;
+
+}
+
+.beers_info h2,
+.beers_info span {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+}
+
+.beers_info h2 {
+    font-size: 34px;
+}
+
+.beers_info span {
+    font-size: 22px;
+}
+
+.beers_info h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #F8B803;
+    margin: 30px 0 15px;
+}
+
+.beers_info p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.beers_parametrs div {
+    display: flex;
+    flex-direction: column;
+}
+
+.beers_parametrs div span {
+    margin: 7px 0;
+}
+
+@media(min-width: 770px) {
+    .beers_card {
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+
+.our_events {
+    background-color: #2C221D;
+
+}
+
+.our_events_content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.our_events_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_events_header h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.our_events_header img {
+    margin-left: 30px;
+}
+
+.our_events_header p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.our_events_tile {
+    display: grid;
+}
+
+.events {
+    display: grid;
+    grid-template-rows: 50% 1fr;
+    justify-content: center;
+}
+
+.events {
+    background-color: #342924;
+}
+
+.events img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.events_text {
+    padding: 40px;
+}
+
+.events_text span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.events_text h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #F8B803;
+    margin: 20px 0;
+}
+
+.events_text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.events_text a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.events_text a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+@media(min-width: 770px) {
+    .events {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .events_even img {
+        order: 1;
+    }
+
+    .events img {
+        min-height: 100%;
+    }
+}
+
+.our_events_background_bottom {
+    background-image: url(../img/header_background_bottom.svg);
+    height: 50px;
+    background-size: cover;
+}
+
+.reviews {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.reviews_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.reviews_header h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.reviews_header img {
+    margin-left: 30px;
+}
+
+.reviews_header p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.responce_carousel .response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#david_bowman {
+    background-image: url(../img/reviews_david_bowman.jpg);
+}
+
+#erica_madisson {
+    background-image: url(../img/reviews_erica_madisson.jpg);
+}
+
+#tom_peterson {
+    background-image: url(../img/reviews_tom_peterson.png);
+}
+
+.responce_image {
+    height: 170px;
+    width: 170px;
+    border-radius: 170px;
+    background-position: center;
+    background-size: cover;
+}
+
+.responce_name {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #2C8536;
+    margin: 20px 0;
+}
+
+.response p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #59444099;
+    line-height: 1.5;
+    margin: 15px 0;
+    max-width: 450px;
+    ;
+}
+
+.responce_data {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #614E44;
+    margin: 20px 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #0C3B10;
+    font-size: 30px;
+}
+
+/* 'neverlock or r-sim батарея айклауд ' */
+.visit {
+    background-color: #342924;
+    margin: 30px auto;
+
+}
+
+.visit_banner {
+    background-image: url(../img/visit_background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.visit_banner span {
+    margin: 20px 0;
+}
+
+.visit_banner h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 58px;
+    color: #fff;
+}
+
+.visit_banner p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.visit_banner .visit_buttons {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.visit_banner .visit_buttons a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.visit_buttons a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+.visit_banner img {
+    max-width: 100px;
+}
